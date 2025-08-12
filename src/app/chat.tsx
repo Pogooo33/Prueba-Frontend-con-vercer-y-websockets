@@ -4,7 +4,7 @@ import { io } from "socket.io-client"
 import { useEffect,useState } from "react"
 
 
-const socket=io("http:52.47.124.190:3000")//Este es el de aws
+const socket=io("http://52.47.124.190:3000/")//Este es el de aws
 
 export default function Chat(){
   const [chat,setChat]=useState<string[]>([])
